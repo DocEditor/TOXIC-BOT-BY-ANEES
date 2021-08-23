@@ -24,8 +24,8 @@
 > pkg install bash
 > pkg install ffmpeg
 > pkg install libwebp
-> git clone https://github.com/aneeslub/xdev-self
-> cd xdev-self
+> git clone https://github.com/aneeslub/TOXIC-BOT-BY-ANEES
+> cd TOXIC-BOT-BY-ANEES
 > npm i
 > node run.js
 # Untuk Sdcard (File Sudah Di Download)
