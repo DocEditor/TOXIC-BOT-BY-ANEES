@@ -68,9 +68,9 @@ let bancht = JSON.parse(fs.readFileSync('./database/banchat.json'))
 banChats = false
 offline = false
 targetpc = '0'
-ownerNumber = ["62895619083555@s.whatsapp.net","6287817533783@s.whatsapp.net","6285283427860@s.whatsapp.net","6282290559350@s.whatsapp.net","628983583288@s.whatsapp.net","628886234378@s.whatsapp.net"]
-fake = '𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻\n𝑿 - 𝑫𝒆𝒗 𝑻𝒆𝒂𝒎'
-fake1 = '𝑿 - 𝑫𝒆𝒗 𝑻𝒆𝒂𝒎'
+ownerNumber = ["917356378949@s.whatsapp.net"]
+fake = '𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻\nTEAM - TOXIC'
+fake1 = 'ANEES - LUB'
 numbernye = '0'
 waktu = '-'
 alasan = '-'
@@ -2294,7 +2294,7 @@ xdev.sendMessage(from, `*GIT OF BOT*\\n*Ingat ! GIT NOT FOR SALE!*\n\nhttps://gi
 }
 if (button == '(CONTACT ME ) {
 console.log('CONTACT ME')
-xdev.sendMessage(from, `wa.me917356378949`, text, {"contextInfo": {text: 'HelloWorld',"forwardingScore": 3,isForwarded: true,sendEphemeral: true,mentionedJid: [sender],"externalAdReply": {"title": `Hallo kak ${pushname}`,"body": ``,"previewType": "PHOTO","thumbnailUrl": `https://telegra.ph/file/a082de791ef8aff96ec24.jpg`,"thumbnail": "","sourceUrl": ""}}, quoted: dev})
+xdev.sendMessage(from, `wa.me/917356378949`, text, {"contextInfo": {text: 'HelloWorld',"forwardingScore": 3,isForwarded: true,sendEphemeral: true,mentionedJid: [sender],"externalAdReply": {"title": `Hallo kak ${pushname}`,"body": ``,"previewType": "PHOTO","thumbnailUrl": `https://telegra.ph/file/a082de791ef8aff96ec24.jpg`,"thumbnail": "","sourceUrl": ""}}, quoted: dev})
 }
 if (budy.startsWith('$')){
 if (!dev.key.fromMe && !isOwner) return
