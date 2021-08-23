@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://i.imgur.com/A8YZb9V.jpeg" alt="TOXIC BOT " width="300" />
+
 
 
 
