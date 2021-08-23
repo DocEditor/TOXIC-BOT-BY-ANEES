@@ -2278,7 +2278,7 @@ let inilist = []
 for (let i of ownerNumber) {
 const vname = xdev.contacts[i] != undefined ? xdev.contacts[i].vname || xdev.contacts[i].notify : undefined
 inilist.push({
-"displayName": 'X - Dev Team',
+"displayName": 'TEAM TOXIC',
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${xdev.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
@@ -2290,11 +2290,11 @@ xdev.sendMessage(from,'Nih Kak Creator X - Dev Bot',text,{quoted: hehe})
 }
 if (button == 'GITHUB') {
 console.log('GITHUB')
-xdev.sendMessage(from, `*Nih kak github X - Dev Team*\n*Scnya free kak dan juga free api 🤗*\n*Ingat ! jangan diperjual belikan yah !*\n\nhttps://github.com/xdevteam404`, text, {quoted: dev})
+xdev.sendMessage(from, `*GIT OF BOT*\\n*Ingat ! GIT NOT FOR SALE!*\n\nhttps://github.com/aneeslub/TOXIC-BOT-BY-ANEES`, text, {quoted: dev})
 }
-if (button == 'REST API') {
-console.log('REST API')
-xdev.sendMessage(from, `*Nih kak rest api yang digunakan oleh X - Dev Team Dan juga free*\n\nhttps://xdev-api.herokuapp.com/api\n\n*Gunakan dengan bijak dan jangan spam yah kak 🙏🏻*`, text, {"contextInfo": {text: 'HelloWorld',"forwardingScore": 3,isForwarded: true,sendEphemeral: true,mentionedJid: [sender],"externalAdReply": {"title": `Hallo kak ${pushname}`,"body": ``,"previewType": "PHOTO","thumbnailUrl": `https://telegra.ph/file/a082de791ef8aff96ec24.jpg`,"thumbnail": "","sourceUrl": ""}}, quoted: dev})
+if (button == '(CONTACT ME ) {
+console.log('CONTACT ME')
+xdev.sendMessage(from, `wa.me917356378949`, text, {"contextInfo": {text: 'HelloWorld',"forwardingScore": 3,isForwarded: true,sendEphemeral: true,mentionedJid: [sender],"externalAdReply": {"title": `Hallo kak ${pushname}`,"body": ``,"previewType": "PHOTO","thumbnailUrl": `https://telegra.ph/file/a082de791ef8aff96ec24.jpg`,"thumbnail": "","sourceUrl": ""}}, quoted: dev})
 }
 if (budy.startsWith('$')){
 if (!dev.key.fromMe && !isOwner) return
