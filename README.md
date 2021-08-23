@@ -11,11 +11,11 @@
   <a href="https://github.com/xdevteam404"><img title="Author" src="https://img.shields.io/badge/Author-TEAM TOXIC-red.svg?style=for-the-badge&logo=github" /></a>
   <h4 align="center">
   <a
-  <a href="https://wa.me/917356378949">SC FREE API KOK GAN >//< </a>
+  <a href="https://wa.me/917356378949">TEAM TOXIC >//< </a>
 </h4>
 </p>
 
-## CARA INSTALL DI TERMUX
+## INSTALL VIA  TERMUX
 ```bash
 > termux-setup-storage
 > pkg update && pkg upgrade
