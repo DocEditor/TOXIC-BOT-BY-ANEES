@@ -1,5 +1,5 @@
 {
-  "name": "XDevTeam",
+  "name": "TEAM TOXIC",
   "version": "1.0.0",
   "description": "Jangan diperjual belikan !",
   "main": "run.js",
@@ -43,7 +43,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xdevteam404/xdev-self"
+    "url": "git+https://github.com/aneeslub/TOXIC-BOT-BY-ANEES"
   },
   "keywords": [
     "Wasu"
@@ -51,7 +51,7 @@
   "author": "XDevTeam",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xdevteam404"
+    "url": "https://github.com/aneeslub"
   },
-  "homepage": "https://github.com/xdevteam404"
+  "homepage": "https://github.com/aneeslub/TOXIC-BOT-BY-ANEES"
 }
