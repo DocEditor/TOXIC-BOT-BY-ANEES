@@ -1,4 +1,4 @@
-// SC BY X - Dev Team
+// TEAM TOXIC - By Anees
 // JANGAN DIPERJUAL BELIKAN !
 
 const
