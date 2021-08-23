@@ -2292,10 +2292,7 @@ if (button == 'GITHUB') {
 console.log('GITHUB')
 xdev.sendMessage(from, `*GIT OF BOT*\\n*Ingat ! GIT NOT FOR SALE!*\n\nhttps://github.com/aneeslub/TOXIC-BOT-BY-ANEES`, text, {quoted: dev})
 }
-if (button == '(CONTACT ME ) {
-console.log('CONTACT ME')
-xdev.sendMessage(from, `wa.me/917356378949`, text, {"contextInfo": {text: 'HelloWorld',"forwardingScore": 3,isForwarded: true,sendEphemeral: true,mentionedJid: [sender],"externalAdReply": {"title": `Hallo kak ${pushname}`,"body": ``,"previewType": "PHOTO","thumbnailUrl": `https://telegra.ph/file/a082de791ef8aff96ec24.jpg`,"thumbnail": "","sourceUrl": ""}}, quoted: dev})
-}
+
 if (budy.startsWith('$')){
 if (!dev.key.fromMe && !isOwner) return
 qur = budy.slice(2)
