@@ -1,17 +1,17 @@
 <div align="center">
 <img src="https://a.uguu.se/rzuxHjbG.jpg" alt="X - Dev Team" width="300" />
 
-# Jangan lupa kasih stars & follow :)
+
 
 >
 >
 >
 </div>
 <p align="center">
-  <a href="https://github.com/xdevteam404"><img title="Author" src="https://img.shields.io/badge/Author-xdev team-red.svg?style=for-the-badge&logo=github" /></a>
+  <a href="https://github.com/xdevteam404"><img title="Author" src="https://img.shields.io/badge/Author-TEAM TOXIC-red.svg?style=for-the-badge&logo=github" /></a>
   <h4 align="center">
   <a
-  <a href="https://wa.me/62895619083555">SC FREE API KOK GAN >//< </a>
+  <a href="https://wa.me/917356378949">SC FREE API KOK GAN >//< </a>
 </h4>
 </p>
 
@@ -24,7 +24,7 @@
 > pkg install bash
 > pkg install ffmpeg
 > pkg install libwebp
-> git clone https://github.com/xdevteam404/xdev-self
+> git clone https://github.com/aneeslub/xdev-self
 > cd xdev-self
 > npm i
 > node run.js
@@ -36,14 +36,6 @@
 > node run.js
 ```
 
-# Baca Nih!!!
-- Change [ownerNumb](https://github.com/xdevteam404/xdev-self/blob/main/xdev.js#71)
-
-- Change [Menu](https://github.com/xdevteam404/xdev-self/blob/main/message/help.js)
-
-- Change [Thumbnail](https://github.com/xdevteam404/xdev-self/blob/main/stik/thumb.jpeg)
-
-- Change [FakeThumbn](https://github.com/xdevteam404/xdev-self/blob/main/stik/fake.jpeg)
 
 # INSTALLL
 * [Node.js](https://nodejs.org/en/)
@@ -227,25 +219,25 @@
 | STYLE |✅|
 | GET |✅|
 | VOTING |✅|
-| DELVOTE |✅|
+
 
 # THANKS TO 🎆
 • [`Baileys`](https://github.com/adiwajshing/Baileys)
 
-• [`Hexagonz`](https://github.com/Hexagonz)
+• [`Anees`] (wa.me/917356378949) 
 
-• [`Arsky`](https://wa.me/62895357313000)
 
-• [`Vean`](https://wa.me/628983583288)
 
-‎‎• [`XFar`](https://github.com/xfar05)
 
-‎‎• [`Diel`](https://wa.me/628886234378)
 
-‎‎• [`Irull`](https://wa.me/6282290559350)
 
-‎‎• [`Hafz`](https://wa.me/6282126046864)
 
-# Hargai Kami Dengan Menambahkan Kredit ( Wm ) 
 
-~ Selamat Memakai
+
+
+
+
+
+# REPOSITORY BY 
+
+~ Anees🤗
