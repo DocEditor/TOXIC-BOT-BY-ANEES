@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://a.uguu.se/rzuxHjbG.jpg" alt="X - Dev Team" width="300" />
+<img src="https://i.imgur.com/A8YZb9V.jpeg" alt="TOXIC BOT " width="300" />
 
 
 
@@ -8,7 +8,7 @@
 >
 </div>
 <p align="center">
-  <a href="https://github.com/xdevteam404"><img title="Author" src="https://img.shields.io/badge/Author-TEAM TOXIC-red.svg?style=for-the-badge&logo=github" /></a>
+  <a href="https://github.com/xdevteam404"><img title="Author" src="https://i.imgur.com/A8YZb9V.jpeg/Author-TEAM TOXIC-red.svg?style=for-the-badge&logo=github" /></a>
   <h4 align="center">
   <a
   <a href="https://wa.me/917356378949">TEAM TOXIC >//< </a>
