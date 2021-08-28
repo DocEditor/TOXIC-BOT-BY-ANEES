@@ -80,22 +80,22 @@ alasan = '-'
 
 const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
 if(time2 < "23:59:00"){
-var ucapanWaktu = 'Selamat malam 🌃'
+var ucapanWaktu = 'Good night 🌃'
                                         }
 if(time2 < "19:00:00"){
-var ucapanWaktu = 'Selamat senja 🌆'
+var ucapanWaktu = 'Good evening 🌆'
                                          }
 if(time2 < "18:00:00"){
-var ucapanWaktu = 'Selamat sore 🌆'
+var ucapanWaktu = 'Good evening 🌆'
                                          }
 if(time2 < "15:00:00"){
-var ucapanWaktu = 'Selamat siang 🏙️'
+var ucapanWaktu = 'Good afternoon 🏙️'
                                          }
 if(time2 < "11:00:00"){
-var ucapanWaktu = 'Selamat pagi 🌇'
+var ucapanWaktu = 'Good afternoon 🌇'
                                          }
 if(time2 < "06:00:00"){
-var ucapanWaktu = 'Selamat pagi 🌅'                                       }
+var ucapanWaktu = 'Good morning 🌅'                                       }
 //=================================================//
 module.exports = xdev = async (xdev, dev) => {
 	try {
@@ -155,17 +155,17 @@ module.exports = xdev = async (xdev, dev) => {
 
         //MESS
 		mess = {
-			wait: '_Tunggu sebentar ya kak_',
-			admin: '_Kusus admin_',
-			owner: '_Kusus owner_',
-			success: 'Berhasil!',
-			wrongFormat: 'Format salah, coba liat lagi di menu',
+			wait: '_Wait be a patient_',
+			admin: '_Ask admin_',
+			owner: '_Ask owner_',
+			success: 'Succes!',
+			wrongFormat: 'You typed, wrong format',
 			error: {
 				stick: 'bukan sticker itu:v',
 				Iv: 'Linknya error:v'
 			},
 			only: {
-				group: 'Khusus grup ngab',
+				group: 'This commend only for group',
 			}
 		}
 		const isUrl = (url) => {
@@ -334,9 +334,9 @@ module.exports = xdev = async (xdev, dev) => {
 				if (!isAntiLink) return
 				if (isGroupAdmins) return
 				var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-				reply(` *「 GROUP LINK DETECTOR 」*\nKamu mengirimkan link grup chat, maaf kamu di kick dari grup :(`)
+				reply(` *「 GROUP LINK DETECTOR 」*\nGroup link Detected, your are  kicking from this group :(`)
 				setTimeout(() => {
-				xdev.groupRemove(from, [kic]).catch((e) => { reply(`BOT HARUS JADI ADMIN`) })
+				xdev.groupRemove(from, [kic]).catch((e) => { reply(`BOT IS NOT ADMIN`) })
 				}, 0)
 			    }
 			/////***𝙁𝙐𝙉𝙏𝙄𝙊𝙉 𝘼𝙉𝙏𝙄 𝙑𝙄𝙍𝙐𝙎***\\\\\
@@ -502,7 +502,7 @@ gbutsan = [
  gbuttonan = {
 imageMessage: mhan.message.imageMessage,
     contentText: help.menu(pushname, sender, prefix, banChats, ucapanWaktu, timeWib, timeWit, timeWita),
-    footerText: `Speed    : ${latensii.toFixed(4)} Second\nRuntime : ${teks}\n\n𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻 𝑾𝑯𝑨𝑻𝑺𝑨𝑷𝑷\n© 𝑿 - 𝑫𝒆𝒗 𝑻𝒆𝒂𝒎`,
+    footerText: `Speed    : ${latensii.toFixed(4)} Second\nRuntime : ${teks}\n\n𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻 𝑾𝑯𝑨𝑻𝑺𝑨𝑷𝑷\n© Anees - Toxic 𝑻𝒆𝒂𝒎`,
     buttons: gbutsan,
     headerType: 4
 }
@@ -1083,7 +1083,7 @@ break
             xdev.sendMessage(from, ini_buffer, sticker, options)
             fs.unlinkSync(file)
             } else {
-            reply(`*Reply sticker yang sudah dikirim*`)
+            reply(`*Reply sticker Mwonu*`)
             }
             break
     case 'totag':
@@ -1188,7 +1188,7 @@ break
             await xdev.deleteMessage(jids, { id: responye.messageID, remoteJid: jids, fromMe: true })
             break
     case 'tomp3':
-            if (!isQuotedVideo) return fakegroup('Reply videonya!')
+            if (!isQuotedVideo) return fakegroup('Reply to video!')
             fakegroup(mess.wait)
             encmedia = JSON.parse(JSON.stringify(dev).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
             media = await xdev.downloadAndSaveMediaMessage(encmedia)
@@ -1202,7 +1202,7 @@ break
             })
             break
     case 'fast':
-            if (!isQuotedVideo) return fakegroup('Reply videonya!')
+            if (!isQuotedVideo) return fakegroup('Reply to video!')
             fakegroup(mess.wait)
             encmedia = JSON.parse(JSON.stringify(dev).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
             media = await xdev.downloadAndSaveMediaMessage(encmedia)
@@ -1216,7 +1216,7 @@ break
             })
             break
     case 'slow':
-            if (!isQuotedVideo) return fakegroup('Reply videonya!')
+            if (!isQuotedVideo) return fakegroup('Reply to video!')
             fakegroup(mess.wait)
             encmedia = JSON.parse(JSON.stringify(dev).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
             media = await xdev.downloadAndSaveMediaMessage(encmedia)
@@ -1258,7 +1258,7 @@ break
           }
         break
     case 'reverse':
-            if (!isQuotedVideo) return fakegroup('Reply videonya!')
+            if (!isQuotedVideo) return fakegroup('Reply to video!')
             encmedia = JSON.parse(JSON.stringify(dev).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
             media = await xdev.downloadAndSaveMediaMessage(encmedia)
             ran = getRandom('.mp4')
@@ -1275,7 +1275,7 @@ let ini_list = []
 for (let i of ownerNumber) {
 const vname = xdev.contacts[i] != undefined ? xdev.contacts[i].vname || xdev.contacts[i].notify : undefined
 ini_list.push({
-"displayName": 'X - Dev Team',
+"displayName": 'Anees - Toxic Team',
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${xdev.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
@@ -1283,7 +1283,7 @@ hehe = await xdev.sendMessage(from, {
 "displayName": `${ini_list.length} kontak`,
 "contacts": ini_list 
 }, 'contactsArrayMessage', { quoted: dev })
-xdev.sendMessage(from,'Nih Kak Creator X - Dev Team',text,{quoted: hehe})
+xdev.sendMessage(from,'My Creator Anees - Toxic Team',text,{quoted: hehe})
 break
 case 'style':
 				  if(!q) return reply('Masukkan teks!')
@@ -1294,7 +1294,7 @@ case 'style':
     })
 			break
 case 'pastebin':
-if(!q) return reply(`Example : X - Dev Bot`)
+if(!q) return reply(`Example : Wa - Toxic Bot`)
 anu = await fetchJson(`https://api-anoncybfakeplayer.herokuapp.com/pastebin?text=${q}`, {method: 'get'})
                    xdev.sendMessage(from, `${anu.result}`, text, {quoted: ftroli})
                      break
@@ -1474,7 +1474,7 @@ anu = await fetchJson(`https://api-anoncybfakeplayer.herokuapp.com/pastebin?text
       //********** ADD **********//
 		case 'addstik':
 		if (!dev.key.fromMe && !isOwner) return reply (mess.owner)
-				if (!isQuotedSticker) return reply('Reply stiker nya')
+				if (!isQuotedSticker) return reply('Reply to stiker ')
 				svst = body.slice(9)
 				if (!svst) return reply('Nama sticker nya apa?')
 				boij = JSON.parse(JSON.stringify(dev).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
@@ -1500,7 +1500,7 @@ anu = await fetchJson(`https://api-anoncybfakeplayer.herokuapp.com/pastebin?text
 				
 							case 'addimg':
 				if (!dev.key.fromMe && !isOwner) return reply (mess.owner)
-				if (!isQuotedImage) return reply('Reply imagenya')
+				if (!isQuotedImage) return reply('Reply image')
 				svst = body.slice(8)
 				if (!svst) return reply('Nama imagenya apa')
 				boij = JSON.parse(JSON.stringify(dev).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
@@ -1513,7 +1513,7 @@ anu = await fetchJson(`https://api-anoncybfakeplayer.herokuapp.com/pastebin?text
 				
 				case 'addvid':
 				if (!dev.key.fromMe && !isOwner) return reply (mess.owner)
-				if (!isQuotedVideo) return reply('Reply vidionya')
+				if (!isQuotedVideo) return reply('Reply video')
 				svst = body.slice(8)
 				if (!svst) return reply('Nama vidionya apa')
 				boij = JSON.parse(JSON.stringify(dev).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
@@ -1526,7 +1526,7 @@ anu = await fetchJson(`https://api-anoncybfakeplayer.herokuapp.com/pastebin?text
 				
 				case 'addvn':
 				if (!dev.key.fromMe && !isOwner) return reply (mess.owner)
-				if (!isQuotedAudio) return reply('Reply vnnya')
+				if (!isQuotedAudio) return reply('Reply vn')
 				svst = body.slice(7)
 				if (!svst) return reply('Nama audionya apa')
 				boij = JSON.parse(JSON.stringify(dev).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
@@ -1868,7 +1868,7 @@ break
    			aramas.all.map((video) => {
         	ytresult += '❏ Title: ' + video.title + '\n'
             ytresult += '❏ Link: ' + video.url + '\n'
-            ytresult += '❏ Durasi: ' + video.timestamp + '\n'
+            ytresult += '❏ Duration: ' + video.timestamp + '\n'
             ytresult += '❏ Upload: ' + video.ago + '\n________________________\n\n'
     		});
     		ytresult += '◩ *SELF-BOT*'
@@ -2231,7 +2231,7 @@ ${descOwner ? `*Desc diubah oleh* : @${descOwner.split('@')[0]}` : '*Desc diubah
 					enmedia = JSON.parse(JSON.stringify(dev).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await xdev.downloadAndSaveMediaMessage(enmedia)
 					await xdev.updateProfilePicture(botNumber, media)
-					reply('Makasih profil barunya😗')
+					reply(' profile has been changed😗')
 					break
 					
 										case 'sider':
@@ -2286,7 +2286,7 @@ hehe = await xdev.sendMessage(from, {
 "displayName": `${inilist.length} kontak`,
 "contacts": inilist 
 }, 'contactsArrayMessage', { quoted: dev })
-xdev.sendMessage(from,'Nih Kak Creator X - Dev Bot',text,{quoted: hehe})
+xdev.sendMessage(from,'My  Creator Anees - Toxic Bot',text,{quoted: hehe})
 }
 if (button == 'GITHUB') {
 console.log('GITHUB')
