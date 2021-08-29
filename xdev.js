@@ -502,7 +502,7 @@ gbutsan = [
  gbuttonan = {
 imageMessage: mhan.message.imageMessage,
     contentText: help.menu(pushname, sender, prefix, banChats, ucapanWaktu, timeWib, timeWit, timeWita),
-    footerText: `Speed    : ${latensii.toFixed(4)} Second\nRuntime : ${teks}\n\n𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻 𝑾𝑯𝑨𝑻𝑺𝑨𝑷𝑷\n© Anees - Toxic 𝑻𝒆𝒂𝒎`,
+    footerText: `Speed    : ${latensii.toFixed(4)} Second\nRuntime : ${teks}\n\n𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻 𝑾𝑯𝑨𝑻𝑺𝑨𝑷𝑷\n© Doceditor - MMx 𝑻𝒆𝒂𝒎`,
     buttons: gbutsan,
     headerType: 4
 }
@@ -2286,11 +2286,11 @@ hehe = await xdev.sendMessage(from, {
 "displayName": `${inilist.length} kontak`,
 "contacts": inilist 
 }, 'contactsArrayMessage', { quoted: dev })
-xdev.sendMessage(from,'My  Creator Anees - Toxic Bot',text,{quoted: hehe})
+xdev.sendMessage(from,'My  Creator DOC - EDIROR Bot',text,{quoted: hehe})
 }
 if (button == 'GITHUB') {
 console.log('GITHUB')
-xdev.sendMessage(from, `*GIT OF BOT*\\n*Ingat ! GIT NOT FOR SALE!*\n\nhttps://github.com/aneeslub/TOXIC-BOT-BY-ANEES`, text, {quoted: dev})
+xdev.sendMessage(from, `*HEHE YA BOOI :)`, text, {quoted: dev})
 }
 
 if (budy.startsWith('$')){
