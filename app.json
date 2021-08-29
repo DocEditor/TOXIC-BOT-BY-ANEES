@@ -1,0 +1,7 @@
+{
+  "name": "whatsapp-bot",
+  "description": "whatsapp bot build with nodejs",
+  "repository": "https://github.com/DocEditor/TOXIC-BOT-BY-ANEES",
+  "logo": "https://i.ibb.co/tCN1d19/doc-bot.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation"]
+}
