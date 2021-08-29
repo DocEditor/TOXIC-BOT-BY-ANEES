@@ -1632,27 +1632,39 @@ break
 			xdev.sendMessage(from, optionshidetag, text)
 			break
 			
-	case 'play':
-			if (args.length === 0) return reply(`Send orders *${prefix}play* _The title of the song to search for_`)
-            var srch = args.join('')
-    		aramas = await yts(srch);
-    		aramat = aramas.all 
-   			var mulaikah = aramat[0].url							
-                  try {
-                    yta(mulaikah)
-                    .then((res) => {
-                        const { dl_link, thumb, title, filesizeF, filesize } = res
-                        axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-                        .then(async (a) => {
-                        if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_For duration more than limit is presented in devtuk link_`)
-                        const captions = `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Please wait for the media file to be sent it may take a few minutes_`
-                        sendMediaURL(from, thumb, captions)
-                        await sendMediaURL(from, dl_link).catch(() => reply('error'))
-                        })                
-                        })
-                        } catch (err) {
-                        reply(mess.error.api)
-                        }
+	Client.cmd.on('play', async (data) =>{
+            if(isLimit(data.sender)) return data.reply(mess.limit)
+            if(data.body == "") return data.reply(`Kirim perintah *${data.prefix}youtubedl [ query ]*\nContoh : ${data.prefix}youtubedl Alan walker`)
+            data.reply(mess.wait)
+			axios.get(`${configs.apiUrl}/api/yts?apikey=${configs.zeksKey}&q=${data.body}`).then((xres) =>{
+			if (!xres.data.status || !xres.data.result) return data.reply(xres.data.message)
+			secs = []
+			xres.data.result.splice(10, xres.data.result.length)
+			xres.data.result.forEach((xres, i) =>{
+				secs.push({
+                        "rows": [
+                           {
+                              "title": "MP3",
+							  description: `Title: ${xres.video.title}\n\nUploader: ${xres.uploader.username}`,
+                              "rowId": `${data.prefix}ytmp3 ${xres.video.url}`
+                           },
+						   {
+                              "title": "MP4",
+							  description: `Title: ${xres.video.title}\n\nUploader: ${xres.uploader.username}`,
+                              "rowId": `${data.prefix}ytmp4 ${xres.video.url}`
+                           }
+                        ], title: i+1})
+			})
+			let po = client.prepareMessageFromContent(data.from, {
+				  "listMessage":{
+                  "title": "*YOUTUBE DOWNLOAD*",
+                  "description": `*Result for : ${data.body}*\n*Download video by click button bellow*`,
+                  "buttonText": "Result",
+                  "listType": "SINGLE_SELECT",
+                  "sections": secs}}, {}) 
+            client.relayWAMessage(po, {waitForAck: true})	
+			})
+        })
                    break  
                    case 'bc':
 
