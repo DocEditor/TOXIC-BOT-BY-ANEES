@@ -15,7 +15,7 @@
 </h4>
 </p>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dvnz99/wabot/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DocEditor/TOXIC-BOT-BY-ANEES/)
 
 ## INSTALL VIA  TERMUX
 ```bash
