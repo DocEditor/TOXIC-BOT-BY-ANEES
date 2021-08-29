@@ -8,10 +8,10 @@
 >
 </div>
 <p align="center">
-  <a href="https://github.com/xdevteam404"><img title="Author" src="https://i.imgur.com/A8YZb9V.jpeg/Author-TEAM TOXIC-red.svg?style=for-the-badge&logo=github" /></a>
+  <a href="https://github.com/xdevteam404"><img title="Author" src="https://imgur.com/5wPp4Ta.jpeg/Author-DOC EDITOR-red.svg?style=for-the-badge&logo=github" /></a>
   <h4 align="center">
   <a
-  <a href="https://wa.me/917356378949">TEAM TOXIC >//< </a>
+  <a href="https://wa.me/919061363103">TEAM DOC >//< </a>
 </h4>
 </p>
 
@@ -24,7 +24,7 @@
 > pkg install bash
 > pkg install ffmpeg
 > pkg install libwebp
-> git clone https://github.com/aneeslub/TOXIC-BOT-BY-ANEES
+> git clone https://github.com/DocEditor/TOXIC-BOT-BY-ANEES
 > cd TOXIC-BOT-BY-ANEES
 > npm i
 > node run.js
