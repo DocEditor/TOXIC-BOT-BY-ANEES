@@ -15,6 +15,8 @@
 </h4>
 </p>
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dvnz99/wabot/)
+
 ## INSTALL VIA  TERMUX
 ```bash
 > termux-setup-storage
