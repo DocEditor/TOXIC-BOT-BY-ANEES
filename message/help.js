@@ -1,5 +1,5 @@
 exports.menu = (pushname, sender, prefix, banChats, ucapanWaktu, timeWib, timeWit, timeWita) => {
-return`*╭─❒ 「 TEAM-TOXIC By Anees 」 ──────*
+return`*╭─❒ 「 TEAM-MMX By Doc 」 ──────*
 *│*
 *│*⬡ *${ucapanWaktu} kak*
 *│*⬡ *Nama : ${pushname}*
@@ -179,9 +179,9 @@ return`*╭─❒ 「 TEAM-TOXIC By Anees 」 ──────*
 
 ❒  *「 Thanks To : 」*  
 *│*
-*├  ▢  : ANEES*
-*├  ▢  : TEAM TOXIC
+*├  ▢  : DOCEDITOR*
+*├  ▢  : TEAM MMX
 *└─────────────* 
 
-❏ *𝑿 -*TEAM TOXIC ❤* ❏`
+❏ *𝑿 -*TEAM MMX ❤* ❏`
 }
