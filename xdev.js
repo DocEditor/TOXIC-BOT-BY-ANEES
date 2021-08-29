@@ -68,9 +68,9 @@ let bancht = JSON.parse(fs.readFileSync('./database/banchat.json'))
 banChats = false
 offline = false
 targetpc = '0'
-ownerNumber = ["917356378949@s.whatsapp.net"]
-fake = '𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻\nTEAM - TOXIC'
-fake1 = 'ANEES - LUB'
+ownerNumber = ["919061363103@s.whatsapp.net"]
+fake = '𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻\nTEAM - DOC'
+fake1 = 'DOC - EDITOR'
 numbernye = '0'
 waktu = '-'
 alasan = '-'
@@ -815,7 +815,7 @@ reply(mess.wait)
             let store = '❉─────────────────────❉\n'
             for (let i of play){
             store += `\n*「 _PLAY STORE_ 」*\n
-- *Nama* : ${i.name}
+- *NamE* : ${i.name}
 - *Link* : ${i.link}\n
 - *Dev* : ${i.developer}
 - *Link Dev* : ${i.link_dev}\n❉─────────────────────❉`
@@ -1275,7 +1275,7 @@ let ini_list = []
 for (let i of ownerNumber) {
 const vname = xdev.contacts[i] != undefined ? xdev.contacts[i].vname || xdev.contacts[i].notify : undefined
 ini_list.push({
-"displayName": 'Anees - Toxic Team',
+"displayName": 'DOC - TEAM MMX',
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${xdev.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
@@ -1283,7 +1283,7 @@ hehe = await xdev.sendMessage(from, {
 "displayName": `${ini_list.length} kontak`,
 "contacts": ini_list 
 }, 'contactsArrayMessage', { quoted: dev })
-xdev.sendMessage(from,'My Creator Anees - Toxic Team',text,{quoted: hehe})
+xdev.sendMessage(from,'My Creator Doceditor - MMX Team',text,{quoted: hehe})
 break
 case 'style':
 				  if(!q) return reply('Masukkan teks!')
@@ -1294,7 +1294,7 @@ case 'style':
     })
 			break
 case 'pastebin':
-if(!q) return reply(`Example : Wa - Toxic Bot`)
+if(!q) return reply(`Example : Wa - Doc Bot`)
 anu = await fetchJson(`https://api-anoncybfakeplayer.herokuapp.com/pastebin?text=${q}`, {method: 'get'})
                    xdev.sendMessage(from, `${anu.result}`, text, {quoted: ftroli})
                      break
@@ -1633,7 +1633,7 @@ break
 			break
 			
 	case 'play':
-			if (args.length === 0) return reply(`Kirim perintah *${prefix}play* _Judul lagu yang akan dicari_`)
+			if (args.length === 0) return reply(`Send orders *${prefix}play* _The title of the song to search for_`)
             var srch = args.join('')
     		aramas = await yts(srch);
     		aramat = aramas.all 
@@ -1644,8 +1644,8 @@ break
                         const { dl_link, thumb, title, filesizeF, filesize } = res
                         axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
                         .then(async (a) => {
-                        if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Untuk durasi lebih dari batas disajikan dalam devtuk link_`)
-                        const captions = `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
+                        if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_For duration more than limit is presented in devtuk link_`)
+                        const captions = `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Please wait for the media file to be sent it may take a few minutes_`
                         sendMediaURL(from, thumb, captions)
                         await sendMediaURL(from, dl_link).catch(() => reply('error'))
                         })                
